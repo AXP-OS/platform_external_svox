@@ -31,8 +31,7 @@ public class LangPackUninstaller extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Log.v(TAG, "about to delete " + INSTALLER_PACKAGE);
-        context.getPackageManager().deletePackage(INSTALLER_PACKAGE, null, 0);
+        Log.v(TAG, "unable to delete " + INSTALLER_PACKAGE);
     }
 
     /**
